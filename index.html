@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- googlefonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <meta name="description" content="網頁切版練習" />
+    <meta name="keywords" content="webdesign" />
+    <title>怪獸電力公司</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- opening animation -->
+    <div class="loading-page">
+      <div class="door">
+        <div class="door-in">
+          <div class="door-style"></div>
+          <div class="door-style"></div>
+          <div class="door-style"></div>
+          <div class="handle"></div>
+        </div>
+        <div class="door-light">
+          <div class="light"></div>
+        </div>
+      </div>
+      <div class="glowing">
+        <span id="title" class="glowing-txt">怪獸電力公司</span>
+        <button class="glowing-btn">
+          <span class="glowing-txt"
+            >Mo<span class="faulty-letter">n</span>sters, Inc</span
+          >
+        </button>
+        <div class="loading">
+          <div class="bar"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- header -->
+    <div class="navbar">
+      <ul>
+        <li><a class="fa-solid fa-bars" id="menu-icon"></a></li>
+        <li><a href="#">PRODUCT</a></li>
+        <li><a href="#">ABOUT</a></li>
+        <li>
+          <a href="#"
+            ><img
+              class="logo"
+              src="./img/logo.png"
+              width="50px"
+              draggable="false"
+              alt=""
+          /></a>
+        </li>
+        <li><a href="#">CHARACTER</a></li>
+        <li><a href="#">VIDEO</a></li>
+        <li><a class="fa-regular fa-moon" id="darkmode"></a></li>
+      </ul>
+    </div>
+
+    <!-- monsters swiper slider -->
+    <section id="monsters-swiper">
+      <div class="container">
+        <h3 class="section-subheading">Monsters</h3>
+        <h1 class="section-heading">CHARACTER</h1>
+      </div>
+      <div class="container">
+        <div class="tranding-slider">
+          <div class="swiper-wrapper">
+            <!-- Slide-start -->
+            <div class="swiper-slide">
+              <div class="tranding-slide-img">
+                <img src="./img/monsters-4.png" alt="monsters-4" />
+              </div>
+              <div class="tranding-slide-content">
+                <h1 class="name">大眼仔</h1>
+                <h2 class="english-name">Mike Wazowski</h2>
+                <div class="des">
+                  <p>
+                    全身都是綠色的，手和腳都很細，還有一隻巨大眼睛。他和毛怪是室友也是最好的朋友，工作上他則是毛怪的助手。
+                  </p>
+                  <p>
+                    大眼仔性格樂觀積極的他很容易滿足，例如在廣告和雜誌封面上，自己的臉完全被擋住，但他所看到想到的只是自己上了電視或是上了雜誌封面並對此感到激動不已。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Slide-end -->
+            <!-- Slide-start -->
+            <div class="swiper-slide">
+              <div class="tranding-slide-img">
+                <img src="./img/monsters-3.png" alt="monsters-7" />
+              </div>
+              <div class="tranding-slide-content">
+                <h1 class="name">毛怪</h1>
+                <h2 class="english-name">James P. Sullivan</h2>
+                <div class="des">
+                  <p>
+                    一隻體型龐大並長滿藍色長毛，頭上有兩個尖角，身上有紫色斑塊，心地善良友好的怪獸。雖然他在工作上非常擅長（嚇唬孩子），但本質上卻很善良和體貼。
+                  </p>
+                  <p>
+                    毛怪的個性樂觀而放鬆，影片一開始就介紹他是怪獸電力公司連續多個月「業績」最好的「驚嚇專員」。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Slide-end -->
+            <!-- Slide-start -->
+
+            <!-- Slide-start -->
+            <div class="swiper-slide">
+              <div class="tranding-slide-img">
+                <img src="./img/monsters-2.png" alt="monsters-2" />
+              </div>
+              <div class="tranding-slide-content">
+                <h1 class="name">阿布</h1>
+                <h2 class="english-name">Boo</h2>
+                <div class="des">
+                  <p>
+                    阿布是個兩歲大的人類小女孩，除了經常晚上從衣櫃裡鑽出來嚇她的藍道外不害怕任何怪物，稱毛怪為「Kitty」。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Slide-end -->
+
+            <!-- Slide-start -->
+            <div class="swiper-slide">
+              <div class="tranding-slide-img">
+                <img src="./img/monsters-5.png" alt="monsters-5" />
+              </div>
+              <div class="tranding-slide-content">
+                <h1 class="name">羅茲</h1>
+                <h2 class="english-name">Roz</h2>
+                <div class="des">
+                  <p>
+                    羅茲表面上是怪獸電力公司的書記，實際上卻是兒童探測局的第一號特工兼主管，在這裡充當臥底已有兩年半。她的外形類似於鼻涕蟲。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Slide-end -->
+            <!-- Slide-start -->
+            <div class="swiper-slide">
+              <div class="tranding-slide-img">
+                <img src="./img/monsters-6.png" alt="monsters-6" />
+              </div>
+              <div class="tranding-slide-content">
+                <h1 class="name">亨利·荷特路</h1>
+                <h2 class="english-name">Henry J. Waternoose III</h2>
+                <div class="des">
+                  <p>
+                    怪獸電力公司第三代總裁，有五隻眼睛，腳則與螃蟹類似，他的父親和祖父也都曾擔任這一職務。
+                  </p>
+                  <p>
+                    他一開始有些像是毛怪的導師，相信後者是最優秀的尖叫專員，不料為了挽救公司的經營和藍道同流合汙，最終被CDA逮捕。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Slide-end -->
+            <div class="swiper-slide">
+              <div class="tranding-slide-img">
+                <img src="./img/monsters-1.png" alt="monsters-1" />
+              </div>
+              <div class="tranding-slide-content">
+                <h1 class="name">藍道</h1>
+                <h2 class="english-name">Randall Boggs</h2>
+                <div class="des">
+                  <p>
+                    像變色龍一樣可以根據環境改變顏色，達到隱身的效果，他是怪獸電力公司業績僅次於毛怪的驚叫專員，並因為長期屈居亞軍而對毛怪積怨已久。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Slide-end -->
+          </div>
+          <div class="tranding-slider-control">
+            <div class="swiper-button-prev slider-arrow"></div>
+            <div class="swiper-button-next slider-arrow"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about container">
+      <h3 class="section-subheading">Monsters</h3>
+      <h1 class="section-heading">ABOUT</h1>
+      <div class="container">
+        <img src="./img/about-1.jpg" alt="about-1" />
+        <p>
+          怪獸城市中住的全部都是怪獸居民，城市的供電由怪獸電力公司提供，電力的來源就是人類孩童的尖叫聲。這裡的「驚嚇專員」們將利用衣櫃門為媒介，在夜裡潛入人類孩子的臥室中嚇唬他們並收集他們的尖叫聲
+        </p>
+        <p>
+          由於怪獸們普遍相信，人類孩童周身都有劇毒，只要輕輕一下接觸就可以致其死命，所以驚嚇專員的工作也被認為非常危險。
+        </p>
+        <img src="./img/about-2.jpg" alt="about-2" />
+        <img src="./img/about-3.jpg" alt="about-3" />
+        <p>
+          蘇利文偶然發現藍道把一扇已經啟用的門留在驚嚇樓層，看起來是打算利用這扇門來獲得額外的驚嚇積分。誰料想，一個人類小女孩打開門進入了工廠，這可把蘇利文嚇壞了
+        </p>
+        <p>
+          他試著把小女孩送回去，而埋伏在此的藍道打算綁架阿布，卻錯綁了大眼仔。
+          阿布克服了自己的恐懼，幫助蘇利文打敗了藍道，兩怪將藍道扔進一扇門中並將門摔碎。
+        </p>
+        <img src="./img/about-4.jpg" alt="about-4" />
+        <img src="./img/about-5.jpg" alt="about-5" />
+        <p>
+          蘇利文和大眼仔與阿布告別，將她送回家中，然後阿布的門也在羅茲的命令下被粉碎了。蘇利文根據自己和阿布在一起的經歷，想出了挽救怪物城市能源危機的新方案。
+        </p>
+        <p>
+          怪獸電力公司的發電方式變了，如今怪獸們雖然一樣是在夜裡穿過衣櫃的門進入人類孩童的臥室，但他們其實是要去逗樂孩子，因為孩子們的歡笑聲中含有遠勝尖叫聲的能量，想出這方案的蘇利文成為了新任總裁，同時兩怪也登上了雜誌封面。
+        </p>
+        <img src="./img/about-6.jpg" alt="about-6" />
+      </div>
+    </section>
+    <section class="vedio container">
+      <h3 class="section-subheading">Monsters</h3>
+      <h1 class="section-heading">VEDIO</h1>
+      <iframe
+        src="https://www.youtube.com/embed/FCOtxD7157s?start=1"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    </section>
+    <section class="product container">
+      <h3 class="section-subheading">Monsters</h3>
+      <h1 class="section-heading">PRODUCTION</h1>
+      <h3>尚無產品資訊。</h3>
+    </section>
+    <footer>
+      <div>©2023 Created By Lumis All Rights Reserve</div>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
