@@ -16,7 +16,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;800&display=swap"
       rel="stylesheet"
     />
     <!-- swiper -->
@@ -25,7 +25,7 @@
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-
+    <link rel="icon" href="/favicon.ico" />
     <meta name="description" content="網頁切版練習" />
     <meta name="keywords" content="webdesign" />
     <title>怪獸電力公司</title>
@@ -59,11 +59,11 @@
     </div>
 
     <!-- header -->
-    <div class="navbar">
+    <header class="navbar">
       <ul>
         <li><a class="fa-solid fa-bars" id="menu-icon"></a></li>
-        <li><a href="#">PRODUCT</a></li>
-        <li><a href="#">ABOUT</a></li>
+        <li><a href="#product">PRODUCT</a></li>
+        <li><a href="#about">ABOUT</a></li>
         <li>
           <a href="#"
             ><img
@@ -74,14 +74,27 @@
               alt=""
           /></a>
         </li>
-        <li><a href="#">CHARACTER</a></li>
-        <li><a href="#">VIDEO</a></li>
+        <li><a href="#character">CHARACTER</a></li>
+        <li><a href="#video">VIDEO</a></li>
         <li><a class="fa-regular fa-moon" id="darkmode"></a></li>
       </ul>
-    </div>
+    </header>
+    <section class="banner">
+      <h1><img src="./img/logo.png" />ONSTERS, INC</h1>
+      <div class="bg"></div>
+      <div class="social-media">
+        <a class="fa-brands fa-youtube"></a>
+        <a class="fa-brands fa-square-facebook"></a>
+        <a class="fa-brands fa-twitter"></a>
+      </div>
+      <div class="more">
+        <a href="#character"> 了解更多</a>
+        <i class="fa-solid fa-sort-down"></i>
+      </div>
+    </section>
 
     <!-- monsters swiper slider -->
-    <section id="monsters-swiper">
+    <section id="character" class="monsters-swiper">
       <div class="container">
         <h3 class="section-subheading">Monsters</h3>
         <h1 class="section-heading">CHARACTER</h1>
@@ -206,7 +219,7 @@
       </div>
     </section>
 
-    <section class="about container">
+    <section id="about" class="about container">
       <h3 class="section-subheading">Monsters</h3>
       <h1 class="section-heading">ABOUT</h1>
       <div class="container">
@@ -214,47 +227,22 @@
         <p>
           怪獸城市中住的全部都是怪獸居民，城市的供電由怪獸電力公司提供，電力的來源就是人類孩童的尖叫聲。這裡的「驚嚇專員」們將利用衣櫃門為媒介，在夜裡潛入人類孩子的臥室中嚇唬他們並收集他們的尖叫聲
         </p>
-        <p>
-          由於怪獸們普遍相信，人類孩童周身都有劇毒，只要輕輕一下接觸就可以致其死命，所以驚嚇專員的工作也被認為非常危險。
-        </p>
-        <img src="./img/about-2.jpg" alt="about-2" />
         <img src="./img/about-3.jpg" alt="about-3" />
         <p>
-          蘇利文偶然發現藍道把一扇已經啟用的門留在驚嚇樓層，看起來是打算利用這扇門來獲得額外的驚嚇積分。誰料想，一個人類小女孩打開門進入了工廠，這可把蘇利文嚇壞了
-        </p>
-        <p>
-          他試著把小女孩送回去，而埋伏在此的藍道打算綁架阿布，卻錯綁了大眼仔。
+          埋伏在此的藍道打算綁架阿布，卻錯綁了大眼仔。
           阿布克服了自己的恐懼，幫助蘇利文打敗了藍道，兩怪將藍道扔進一扇門中並將門摔碎。
         </p>
-        <img src="./img/about-4.jpg" alt="about-4" />
-        <img src="./img/about-5.jpg" alt="about-5" />
-        <p>
-          蘇利文和大眼仔與阿布告別，將她送回家中，然後阿布的門也在羅茲的命令下被粉碎了。蘇利文根據自己和阿布在一起的經歷，想出了挽救怪物城市能源危機的新方案。
-        </p>
+        <img src="./img/about-6.jpg" alt="about-6" />
         <p>
           怪獸電力公司的發電方式變了，如今怪獸們雖然一樣是在夜裡穿過衣櫃的門進入人類孩童的臥室，但他們其實是要去逗樂孩子，因為孩子們的歡笑聲中含有遠勝尖叫聲的能量，想出這方案的蘇利文成為了新任總裁，同時兩怪也登上了雜誌封面。
         </p>
-        <img src="./img/about-6.jpg" alt="about-6" />
       </div>
     </section>
-    <section class="vedio container">
-      <h3 class="section-subheading">Monsters</h3>
-      <h1 class="section-heading">VEDIO</h1>
-      <iframe
-        src="https://www.youtube.com/embed/FCOtxD7157s?start=1"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen
-      ></iframe>
-    </section>
-    <section class="product container">
-      <h3 class="section-subheading">Monsters</h3>
-      <h1 class="section-heading">PRODUCTION</h1>
-      <h3>尚無產品資訊。</h3>
-    </section>
     <footer>
-      <div>©2023 Created By Lumis All Rights Reserve</div>
+      <a class="fa-brands fa-square-facebook"></a>
+      <a class="fa-brands fa-twitter"></a>
+      <p>⎮</p>
+      <p>© 2023 Created By Lumis. All Rights Reserved</p>
     </footer>
     <script src="app.js"></script>
   </body>
