@@ -1,0 +1,134 @@
+.about {
+  min-height: 100vh;
+  display: flex;
+  position: relative;
+}
+
+.about-container {
+  height: auto;
+  width: 100%;
+  background-image: url(/img/about-2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 80vh;
+}
+.about-content .dots {
+  display: flex;
+  flex-direction: column;
+}
+.about-content .dots li {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 5rem;
+  min-height: 5rem;
+  background-color: var(--bgc);
+  opacity: 0.7;
+  font-size: 2rem;
+  color: var(--text);
+  cursor: pointer;
+}
+.about-content .dots li::before {
+  content: "";
+  display: none;
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: 0.5rem solid rgba(28, 28, 28, 0.885);
+  transform: rotate(-45deg);
+}
+.about-content .dots li:hover {
+  background-color: var(--clr-toggle);
+}
+.about-content .dots li.active {
+  background-color: var(--clr-toggle);
+}
+.about-content .dots li.active::before {
+  display: flex;
+  border-right-color: #fff;
+  -webkit-animation: rotate 6s ease infinite;
+          animation: rotate 6s ease infinite;
+}
+.about-content .summary {
+  width: 40vw;
+  height: 30rem;
+  background-color: var(--bgc);
+  padding: 2rem;
+  overflow-y: scroll;
+  opacity: 0.6;
+}
+.about-content .summary p {
+  padding: 1rem;
+  font-size: 1.5rem;
+  color: var(--text);
+  text-indent: 2rem;
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    opacity: 0;
+    transform: rotate(-90deg);
+  }
+  90% {
+    opacity: 1;
+    border: 0.25rem solid #fff;
+  }
+  100% {
+    opacity: 0.9;
+    transform: rotate(2700deg);
+    border: 5px solid var(--clr-toggle);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    opacity: 0;
+    transform: rotate(-90deg);
+  }
+  90% {
+    opacity: 1;
+    border: 0.25rem solid #fff;
+  }
+  100% {
+    opacity: 0.9;
+    transform: rotate(2700deg);
+    border: 5px solid var(--clr-toggle);
+  }
+}
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media (max-width: 575px) {
+  .about-container {
+    align-items: center;
+    justify-content: center;
+  }
+  .about-content .summary {
+    width: 70vw;
+    margin-right: 0;
+  }
+}/*# sourceMappingURL=about.css.map */

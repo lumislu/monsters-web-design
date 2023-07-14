@@ -1,0 +1,80 @@
+.contact {
+  height: 100vh;
+  background-image: url(/img/doors2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.contact .title {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.contact-info {
+  margin-top: 5rem;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 2rem;
+  padding: 6rem;
+  gap: 6rem;
+  font-size: 1.4rem;
+}
+.contact-info .social-media {
+  display: flex;
+  text-align: center;
+  gap: 3rem;
+  font-size: 3rem;
+  cursor: pointer;
+}
+.contact-info .social-media a:hover {
+  color: var(--clr-toggle);
+}
+.contact-info p {
+  text-indent: 2rem;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 7vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text);
+  font-size: 1.2rem;
+  box-shadow: inset 0px 0px 1px var(--light);
+  background-color: var(--bgc);
+  z-index: 2;
+}
+
+@media (max-width: 990px) {
+  .contact-info {
+    margin-top: 0;
+    width: 80%;
+    padding: 3rem;
+    gap: 3rem;
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 575px) {
+  .contact .title {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  .contact-info {
+    width: 90%;
+    margin-bottom: 10vh;
+  }
+}/*# sourceMappingURL=contact.css.map */

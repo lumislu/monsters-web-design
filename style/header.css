@@ -1,0 +1,218 @@
+.header {
+  position: relative;
+  height: 100vh;
+}
+
+.navbar {
+  position: absolute;
+  width: 100%;
+  z-index: 5;
+}
+.navbar:hover {
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+}
+.navbar ul {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 8vh;
+}
+.navbar ul li {
+  display: flex;
+  font-weight: 500;
+  letter-spacing: 0.15rem;
+  text-align: center;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.navbar ul li:last-child {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+}
+.navbar ul li a {
+  color: var(--text);
+}
+.navbar ul li a img {
+  display: flex;
+}
+.navbar ul li a:visited,
+.navbar ul li a :link {
+  color: var(--text);
+}
+.navbar ul li a:hover {
+  color: var(--clr-toggle);
+}
+.navbar ul .toggle {
+  width: 5rem;
+  height: 2.5rem;
+  background: var(--bgc);
+  position: relative;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+.navbar ul .toggle::before {
+  content: "";
+  transition: 0.5s;
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: var(--clr-toggle);
+  top: 0.25rem;
+  left: 0.25rem;
+}
+.navbar ul #menu-icon {
+  opacity: 0;
+}
+.navbar .navbar-column {
+  display: none;
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(/img/monsters.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  transition: all ease 0.6s;
+}
+.banner .bg {
+  position: absolute;
+  bottom: 6vh;
+  width: 95%;
+  height: 80vh;
+  border-radius: 2rem;
+  opacity: 0.5;
+  box-shadow: 0 0 20px var(--text);
+}
+.banner .bg:hover {
+  box-shadow: 0 0 20px var(--bgc);
+}
+.banner .social-media {
+  position: absolute;
+  right: 5vw;
+  top: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+.banner .social-media a {
+  font-size: 3rem;
+  color: #fff;
+}
+.banner .social-media a:hover {
+  cursor: pointer;
+  color: var(--clr-toggle);
+}
+.banner h1 {
+  font-size: 6rem;
+  color: var(--main-color);
+  text-shadow: 5px 5px 1px rgba(255, 255, 255, 0.6392156863);
+  font-weight: 700;
+  -webkit-animation: logo ease-in 3s 5s forwards;
+          animation: logo ease-in 3s 5s forwards;
+}
+.banner h1 img {
+  width: 20vh;
+}
+.banner .more {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  bottom: 8vh;
+  color: #fff;
+  opacity: 0.7;
+}
+.banner .more i {
+  font-size: 1.25rem;
+  -webkit-animation: jumping ease-in-out 0.7s infinite;
+          animation: jumping ease-in-out 0.7s infinite;
+}
+.banner .more p {
+  font-size: 1.5rem;
+}
+.banner .more:hover, .banner .more:visited {
+  transform: scale(1.1);
+  text-shadow: 0px 0px 25px #fff;
+  opacity: 0.9;
+}
+
+@media (max-width: 990px) {
+  .navbar ul li:nth-child(1),
+.navbar ul li:nth-child(2),
+.navbar ul li:nth-child(4),
+.navbar ul li:nth-child(5) {
+    display: none;
+  }
+  .navbar .navbar-column {
+    display: flex;
+    position: absolute;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    transition: width 1s, height 1s;
+  }
+  .navbar .navbar-column #menu-icon {
+    height: 100%;
+    font-size: 2.2rem;
+    padding: 1.5rem;
+    color: var(--text);
+    cursor: pointer;
+  }
+  .navbar .navbar-column .list {
+    display: none;
+  }
+  .navbar .navbar-column:hover, .navbar .navbar-column.active {
+    width: 45vw;
+    height: 50vh;
+    background-color: var(--bgc);
+  }
+  .navbar .navbar-column:hover #menu-icon, .navbar .navbar-column.active #menu-icon {
+    color: var(--clr-toggle);
+  }
+  .navbar .navbar-column:hover .list, .navbar .navbar-column.active .list {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .navbar .navbar-column:hover .list a, .navbar .navbar-column.active .list a {
+    color: var(--text);
+    font-size: 1.5rem;
+  }
+  .navbar .navbar-column:hover .list a:hover, .navbar .navbar-column.active .list a:hover {
+    color: var(--clr-toggle);
+  }
+  .banner .bg {
+    display: none;
+  }
+  .banner h1 {
+    font-size: 5rem;
+    margin: 0;
+  }
+  .banner h1 img {
+    width: 14vh;
+  }
+}
+@media (max-width: 575px) {
+  .navbar .navbar-column:hover, .navbar .navbar-column.active {
+    width: 80vw;
+    height: 50vh;
+  }
+  .banner h1 {
+    font-size: 2.5rem;
+  }
+  .banner h1 img {
+    width: 8vh;
+  }
+}/*# sourceMappingURL=header.css.map */

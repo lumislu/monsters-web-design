@@ -1,0 +1,187 @@
+.character {
+  height: 100vh;
+  background-image: url(/img/doors.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.character-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+
+.options {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding: 5rem;
+  gap: 2rem;
+}
+
+.option {
+  flex: 1;
+  height: 100%;
+  border-radius: 2rem;
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  cursor: pointer;
+  transition: all 0.5s linear;
+}
+.option .info {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+.option .info .name,
+.option .info .english-name {
+  font-size: 2rem;
+  color: white;
+  transform: rotate(90deg);
+}
+.option .info .des {
+  display: none;
+}
+.option.active {
+  flex: 8;
+  box-shadow: 0px 0px 50px rgb(255, 254, 255) inset, 0px 0px 20px rgb(255, 254, 255);
+}
+.option.active .info {
+  display: flex;
+  align-items: flex-start;
+  justify-content: end;
+  padding: 2rem;
+  transform: rotate(0deg);
+}
+.option.active .info .name {
+  font-size: 3rem;
+  font-weight: bold;
+  transform: rotate(0deg);
+}
+.option.active .info .english-name {
+  font-size: 6rem;
+  font-weight: 900;
+  font-style: italic;
+  color: var(--secondary-green);
+  transform: rotate(0deg);
+}
+.option.active .info .des {
+  display: flex;
+  background-color: rgba(37, 36, 36, 0.283);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+.option.active .info .des p {
+  color: #fff;
+  font-size: 1.6rem;
+}
+.option:nth-child(2), .option:nth-child(6) {
+  box-shadow: 10px 10px 70px var(--wrapper-purple) inset, 0px 0px 40px var(--wrapper-purple), 0px 0px 10px white inset;
+}
+.option:nth-child(2):hover, .option:nth-child(6):hover {
+  box-shadow: 0px 0px 10px white inset;
+}
+.option:nth-child(1), .option:nth-child(7) {
+  box-shadow: 10px 10px 70px var(--wrapper-blue) inset, 0px 0px 40px var(--wrapper-blue), 0px 0px 10px white inset;
+}
+.option:nth-child(1):hover, .option:nth-child(7):hover {
+  box-shadow: 0px 0px 10px white inset;
+}
+.option:nth-child(3), .option:nth-child(5) {
+  box-shadow: 10px 10px 70px var(--wrapper-orange) inset, 0px 0px 40px var(--wrapper-orange), 0px 0px 10px rgb(255, 254, 255) inset;
+}
+.option:nth-child(3):hover, .option:nth-child(5):hover {
+  box-shadow: 0px 0px 10px white inset;
+}
+.option:nth-child(4) {
+  box-shadow: 0px 0px 70px var(--wrapper-green) inset, 0px 0px 40px white;
+}
+.option:nth-child(4):hover {
+  box-shadow: 0px 0px 10px white inset;
+}
+
+@media (max-width: 990px) {
+  .character-container {
+    gap: 1rem;
+  }
+  .options {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 5fr 3fr;
+    grid-gap: 2rem 1rem;
+    padding: 3rem;
+  }
+  .options .option .info .name {
+    width: 100%;
+    font-size: 1.5rem;
+    width: 100%;
+  }
+  .options .option .info .english-name {
+    width: 70px;
+    font-size: 1.2rem;
+  }
+  .options .option.active {
+    width: 100%;
+    grid-column: 1/7;
+    grid-row: 1/2;
+  }
+  .options .option.active .info .english-name {
+    font-size: 4rem;
+  }
+  .options .option.active .info .name {
+    font-size: 2rem;
+  }
+  .options .option.active .info .des p {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 575px) {
+  .character .character-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .character .character-container .title {
+    border-radius: 1rem;
+  }
+  .character .character-container .title p {
+    display: none;
+  }
+  .options {
+    width: 100%;
+    display: grid;
+    grid-template-rows: 3fr 1fr 1fr;
+    grid-gap: 1.5rem;
+    padding: 2rem;
+  }
+  .options .option {
+    grid-column: span 2;
+  }
+  .options .option.active {
+    grid-column: 1/7;
+    grid-row: 1/2;
+  }
+  .options .option.active .info {
+    display: flex;
+  }
+  .options .option.active .info p:nth-child(1),
+.options .option.active .info p:nth-child(2) {
+    font-size: 2rem;
+  }
+  .options .option.active .info .des p {
+    font-size: 1rem;
+  }
+  .options .option .info {
+    display: none;
+  }
+}/*# sourceMappingURL=character.css.map */

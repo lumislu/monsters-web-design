@@ -19,21 +19,16 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;800&display=swap"
       rel="stylesheet"
     />
-    <!-- swiper -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
     <link rel="icon" href="/favicon.ico" />
     <meta name="description" content="網頁切版練習" />
     <meta name="keywords" content="webdesign" />
     <title>怪獸電力公司</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/style/style.css" />
   </head>
   <body>
     <!-- opening animation -->
-    <div class="loading-page">
+    <!-- <div class="loading-page">
       <div class="door">
         <div class="door-in">
           <div class="door-style"></div>
@@ -56,194 +51,136 @@
           <div class="bar"></div>
         </div>
       </div>
-    </div>
+    </div> -->
 
-    <!-- header -->
-    <header class="navbar">
-      <ul>
-        <li><a class="fa-solid fa-bars" id="menu-icon"></a></li>
-        <li><a href="#product">PRODUCT</a></li>
-        <li><a href="#about">ABOUT</a></li>
-        <li>
-          <a href="#"
-            ><img
-              class="logo"
-              src="./img/logo.png"
-              width="50px"
-              draggable="false"
-              alt=""
-          /></a>
-        </li>
-        <li><a href="#character">CHARACTER</a></li>
-        <li><a href="#video">VIDEO</a></li>
-        <li><a class="fa-regular fa-moon" id="darkmode"></a></li>
-      </ul>
-    </header>
-    <section class="banner">
-      <h1><img src="./img/logo.png" />ONSTERS, INC</h1>
-      <div class="bg"></div>
-      <div class="social-media">
-        <a class="fa-brands fa-youtube"></a>
-        <a class="fa-brands fa-square-facebook"></a>
-        <a class="fa-brands fa-twitter"></a>
+    <section class="header">
+      <div class="header-wrapper"></div>
+      <div class="navbar">
+        <ul>
+          <li><a href="#about">關於 ABOUT</a></li>
+          <li><a href="#character">角色介紹 CHARACTER</a></li>
+          <li>
+            <a href="#"
+              ><img
+                class="logo"
+                src="./img/logo.png"
+                width="50px"
+                draggable="false"
+                alt=""
+            /></a>
+          </li>
+          <li><a href="#video">影片 VIDEO</a></li>
+          <li><a href="#contact">聯絡我們 CONTACT</a></li>
+          <li><div class="toggle"></div></li>
+        </ul>
+        <div class="navbar-column">
+          <li><a class="fa-solid fa-bars" id="menu-icon"></a></li>
+          <div class="list">
+            <li><a href="#about">關於 ABOUT</a></li>
+            <li><a href="#character">角色介紹 CHARACTER</a></li>
+            <li><a href="#video">影片 VIDEO</a></li>
+            <li><a href="#contact">聯絡我們 CONTACT</a></li>
+          </div>
+        </div>
       </div>
-      <div class="more">
-        <a href="#character"> 了解更多</a>
-        <i class="fa-solid fa-sort-down"></i>
+      <div class="banner">
+        <div class="bg"></div>
+        <h1><img src="./img/logo.png" />ONSTERS, INC</h1>
+        <div class="social-media text-light">
+          <a class="fa-brands fa-youtube"></a>
+          <a class="fa-brands fa-square-facebook"></a>
+          <a class="fa-brands fa-twitter"></a>
+        </div>
+        <a class="more" href="#character"
+          ><p>Click</p>
+          <i class="fa-solid fa-sort-down"></i
+        ></a>
       </div>
     </section>
 
-    <!-- monsters swiper slider -->
-    <section id="character" class="monsters-swiper">
-      <div class="container">
-        <h3 class="section-subheading">Monsters</h3>
-        <h1 class="section-heading">CHARACTER</h1>
+    <!-- monsters-->
+    <section id="character" class="character">
+      <div class="character-container">
+        <div class="title">
+          <h1>角色介紹 <br />CHARACTER</h1>
+          <p>
+            《怪獸電力公司》是一部由皮克斯動畫工作室製作的動畫電影。這些角色在電影中展現出不同的個性和互動，為觀眾帶來了笑聲和情感，以下是一些主要角色的介紹：
+          </p>
+        </div>
+        <div class="options"></div>
       </div>
-      <div class="container">
-        <div class="tranding-slider">
-          <div class="swiper-wrapper">
-            <!-- Slide-start -->
-            <div class="swiper-slide">
-              <div class="tranding-slide-img">
-                <img src="./img/monsters-4.png" alt="monsters-4" />
-              </div>
-              <div class="tranding-slide-content">
-                <h1 class="name">大眼仔</h1>
-                <h2 class="english-name">Mike Wazowski</h2>
-                <div class="des">
-                  <p>
-                    全身都是綠色的，手和腳都很細，還有一隻巨大眼睛。他和毛怪是室友也是最好的朋友，工作上他則是毛怪的助手。
-                  </p>
-                  <p>
-                    大眼仔性格樂觀積極的他很容易滿足，例如在廣告和雜誌封面上，自己的臉完全被擋住，但他所看到想到的只是自己上了電視或是上了雜誌封面並對此感到激動不已。
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide">
-              <div class="tranding-slide-img">
-                <img src="./img/monsters-3.png" alt="monsters-7" />
-              </div>
-              <div class="tranding-slide-content">
-                <h1 class="name">毛怪</h1>
-                <h2 class="english-name">James P. Sullivan</h2>
-                <div class="des">
-                  <p>
-                    一隻體型龐大並長滿藍色長毛，頭上有兩個尖角，身上有紫色斑塊，心地善良友好的怪獸。雖然他在工作上非常擅長（嚇唬孩子），但本質上卻很善良和體貼。
-                  </p>
-                  <p>
-                    毛怪的個性樂觀而放鬆，影片一開始就介紹他是怪獸電力公司連續多個月「業績」最好的「驚嚇專員」。
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
+    </section>
 
-            <!-- Slide-start -->
-            <div class="swiper-slide">
-              <div class="tranding-slide-img">
-                <img src="./img/monsters-2.png" alt="monsters-2" />
-              </div>
-              <div class="tranding-slide-content">
-                <h1 class="name">阿布</h1>
-                <h2 class="english-name">Boo</h2>
-                <div class="des">
-                  <p>
-                    阿布是個兩歲大的人類小女孩，除了經常晚上從衣櫃裡鑽出來嚇她的藍道外不害怕任何怪物，稱毛怪為「Kitty」。
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-
-            <!-- Slide-start -->
-            <div class="swiper-slide">
-              <div class="tranding-slide-img">
-                <img src="./img/monsters-5.png" alt="monsters-5" />
-              </div>
-              <div class="tranding-slide-content">
-                <h1 class="name">羅茲</h1>
-                <h2 class="english-name">Roz</h2>
-                <div class="des">
-                  <p>
-                    羅茲表面上是怪獸電力公司的書記，實際上卻是兒童探測局的第一號特工兼主管，在這裡充當臥底已有兩年半。她的外形類似於鼻涕蟲。
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide">
-              <div class="tranding-slide-img">
-                <img src="./img/monsters-6.png" alt="monsters-6" />
-              </div>
-              <div class="tranding-slide-content">
-                <h1 class="name">亨利·荷特路</h1>
-                <h2 class="english-name">Henry J. Waternoose III</h2>
-                <div class="des">
-                  <p>
-                    怪獸電力公司第三代總裁，有五隻眼睛，腳則與螃蟹類似，他的父親和祖父也都曾擔任這一職務。
-                  </p>
-                  <p>
-                    他一開始有些像是毛怪的導師，相信後者是最優秀的尖叫專員，不料為了挽救公司的經營和藍道同流合汙，最終被CDA逮捕。
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <div class="swiper-slide">
-              <div class="tranding-slide-img">
-                <img src="./img/monsters-1.png" alt="monsters-1" />
-              </div>
-              <div class="tranding-slide-content">
-                <h1 class="name">藍道</h1>
-                <h2 class="english-name">Randall Boggs</h2>
-                <div class="des">
-                  <p>
-                    像變色龍一樣可以根據環境改變顏色，達到隱身的效果，他是怪獸電力公司業績僅次於毛怪的驚叫專員，並因為長期屈居亞軍而對毛怪積怨已久。
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-          </div>
-          <div class="tranding-slider-control">
-            <div class="swiper-button-prev slider-arrow"></div>
-            <div class="swiper-button-next slider-arrow"></div>
-            <div class="swiper-pagination"></div>
+    <section id="about" class="about">
+      <div class="about-container">
+        <div class="title">
+          <h1>關於我們 <br />ABOUT US</h1>
+          <p>
+            《怪獸電力公司》(Monsters,
+            Inc.)是一部由皮克斯動畫工作室於2001年製作並由華特迪士尼影業發行的電腦動畫電影。故事背景是一個稱為怪獸世界的地方，這個世界有各種形形色色的怪獸們，他們依靠人類的尖叫聲作為能源來源，平時穿越一個稱為門的入口進入人類世界，並利用各種嚇人的方式收集尖叫聲作為能量。
+          </p>
+        </div>
+        <div class="about-content">
+          <ul class="dots"></ul>
+          <div class="summary">
+            <p>
+              怪獸電力公司是這個世界最大的能源公司，他們的員工被稱為恐嚇員。薩利和麥克是這家公司最頂尖的恐嚇員之一，他們是最佳拍檔。薩利是一個巨大有角的怪獸，他具有驚人的外貌和驚人的能力。麥克則是一個綠色的一眼怪獸，他非常聰明和機靈。
+            </p>
+            <p>
+              然而，有一天，一個小女孩叫布萊絲（Boo）意外地闖入了怪獸世界，這打破了怪獸世界的平衡。布萊絲對怪獸世界毫無恐懼，這讓薩利和麥克感到驚訝。他們必須設法保護布萊絲，同時解決怪獸世界面臨的困難和危險。
+            </p>
+            <p>
+              在這個冒險的過程中，薩利和麥克開始質疑他們一直以來對人類的觀點和怪獸世界運作的方式。他們逐漸發現到尖叫聲並不是唯一的能源來源，而且人類並非像他們所認為的那麼可怕。他們逐漸理解到友情、愛和互助的力量，並努力改變怪獸世界的觀念。
+            </p>
+            <p>
+              《怪獸電力公司》通過幽默和感人的故事，描繪了怪獸和人類之間的交流和理解。它探索了成長、改變觀點和克服困難的主題，同時傳達了友情和家庭的重要性。該片獲得了廣大觀眾的喜愛，並成為了皮克斯動畫工作室的經典之作之一。
+            </p>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="about" class="about container">
-      <h3 class="section-subheading">Monsters</h3>
-      <h1 class="section-heading">ABOUT</h1>
-      <div class="container">
-        <img src="./img/about-1.jpg" alt="about-1" />
+    <section id="video" class="video">
+      <div class="title">
+        <h1>預告片段<br />VIDEO</h1>
+        <p>精彩預告</p>
+      </div>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/FCOtxD7157s"
+        title="YouTube video player"
+        frameborder="0"
+        allowfullscreen
+      ></iframe>
+    </section>
+
+    <section class="contact">
+      <div class="title">
+        <h1>聯絡資訊<br />CONTACT US</h1>
         <p>
-          怪獸城市中住的全部都是怪獸居民，城市的供電由怪獸電力公司提供，電力的來源就是人類孩童的尖叫聲。這裡的「驚嚇專員」們將利用衣櫃門為媒介，在夜裡潛入人類孩子的臥室中嚇唬他們並收集他們的尖叫聲
-        </p>
-        <img src="./img/about-3.jpg" alt="about-3" />
-        <p>
-          埋伏在此的藍道打算綁架阿布，卻錯綁了大眼仔。
-          阿布克服了自己的恐懼，幫助蘇利文打敗了藍道，兩怪將藍道扔進一扇門中並將門摔碎。
-        </p>
-        <img src="./img/about-6.jpg" alt="about-6" />
-        <p>
-          怪獸電力公司的發電方式變了，如今怪獸們雖然一樣是在夜裡穿過衣櫃的門進入人類孩童的臥室，但他們其實是要去逗樂孩子，因為孩子們的歡笑聲中含有遠勝尖叫聲的能量，想出這方案的蘇利文成為了新任總裁，同時兩怪也登上了雜誌封面。
+          我們的團隊將竭誠為您提供幫助並回答您的疑問。無論是關於電影的內容、放映時間表還是與電影相關的活動，我們都將盡力滿足您的需求。
         </p>
       </div>
+      <div class="contact-info">
+        <p>
+          感謝您對怪獸電力公司的動畫電影的支持和關注。如果您有任何問題、意見或合作機會，我們非常願意聽取並與您溝通。請通過以下方式與我們聯繫：
+        </p>
+        <div class="social-media">
+          <a class="fa-brands fa-youtube"></a>
+          <a class="fa-brands fa-square-facebook"></a>
+          <a class="fa-brands fa-twitter"></a>
+        </div>
+        <p>
+          同時，我們鼓勵您參與我們的社交媒體社區，與其他影迷交流互動，分享您對怪獸電力公司電影的喜愛和觀影體驗。
+          再次感謝您對怪獸電力公司電影的支持。我們期待為您呈現精彩紛呈的動畫世界！
+        </p>
+      </div>
+      <div class="footer">
+        <p>© 2023 Created By Lumis. All Rights Reserved</p>
+      </div>
     </section>
-    <footer>
-      <a class="fa-brands fa-square-facebook"></a>
-      <a class="fa-brands fa-twitter"></a>
-      <p>⎮</p>
-      <p>© 2023 Created By Lumis. All Rights Reserved</p>
-    </footer>
+    <script src="data.js"></script>
     <script src="app.js"></script>
   </body>
 </html>
