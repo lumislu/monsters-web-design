@@ -7,14 +7,11 @@
 :root {
   --loading-color: #00b3ff;
   --loading-border-color: rgba(23, 224, 255, 0.615);
-  --door-border-color: #454444;
+  --light: #b2b4b4;
   --shadow: #151414;
   --shadow-light: #454646;
-  --light: #b2b4b4;
-  --main-color: #d33e03;
-
   --bgc: #eafbff;
-
+  --door-border-color: #454444;
   --bgc-blur: #e7fdfe2f;
   --text: #2c2d36;
   --clr-toggle: #4b8ecd;
@@ -25,13 +22,6 @@
   --wrapper-blue: rgb(101, 217, 249);
   --wrapper-purple: rgb(220, 105, 255);
   --wrapper-green: rgb(125, 223, 154);
-
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --bgc: #090909;
-      --text: #f2f2f2;
-    }
-  }
 }
 
 * {
@@ -70,13 +60,6 @@ p {
   }
 }
 
-h1 {
-  font-size: 1.8rem;
-  font-weight: 600;
-  padding: 1rem 2rem;
-  text-align: center;
-  color: var(--text);
-}
 .title {
   margin-top: 2rem;
   display: flex;
@@ -87,6 +70,11 @@ h1 {
   background-color: var(--bgc);
 
   & h1 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding: 1rem 2rem;
+    text-align: center;
+    color: var(--text);
     min-width: 30vw;
     margin: 0;
     cursor: pointer;
@@ -119,7 +107,8 @@ h1 {
   height: 100%;
   background-color: rgb(2, 7, 8);
   animation: loading 4s ease-in-out;
-  z-index: 1000;
+  z-index: 100;
+
   &.complete {
     transform: scale(2);
     transition: all ease-in-out 2s 5s;
@@ -130,6 +119,7 @@ h1 {
     }
   }
   & .door {
+    position: relative;
     display: flex;
     min-width: 46vh;
     min-height: 70vh;
@@ -139,7 +129,7 @@ h1 {
     border-radius: 2rem;
     box-shadow: 10px 10px 100px var(--shadow-light);
     background-color: #fff;
-    & .door-in {
+    & .door-style {
       display: flex;
       align-items: center;
       justify-content: space-evenly;
@@ -149,7 +139,7 @@ h1 {
       padding: 2rem;
       box-shadow: inset 1px 1px 10px var(--shadow);
       transform-origin: left;
-      & .door-style {
+      & .door-line {
         position: relative;
         left: 2vh;
         width: 20%;
@@ -157,7 +147,7 @@ h1 {
         border: 1vh solid rgba(119, 119, 119, 0.186);
         border-radius: 1vh;
       }
-      & .handle {
+      & .door-handle {
         width: 2vh;
         height: 2vh;
         transform: translateX(3vh);
@@ -166,7 +156,6 @@ h1 {
         box-shadow: inset 2px 2px 5px var(--light), 2px 2px 1px var(--shadow);
       }
     }
-
     & .door-light {
       display: flex;
       align-items: center;
@@ -198,32 +187,41 @@ h1 {
         animation: light 1.2s ease infinite;
       }
     }
+    &::after {
+      content: "Monster, Inc";
+      position: absolute;
+      width: 100vw;
+      font-size: 30vh;
+      z-index: -1;
+      top: -10vh;
+      left: -30vw;
+      font-weight: 900;
+      color: #91d8eb;
+      text-shadow: 0 0 5px var(--loading-color), 0 0 15px var(--loading-color),
+        0 0 30px var(--loading-color), 0 0 60px var(--loading-color),
+        0 0 80px var(--loading-color), 0 0 120px var(--loading-color);
+    }
   }
   & .glowing {
     position: fixed;
-    transform: translateY(-10%);
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+
     & #title {
-      font-size: 3vh;
+      font-size: 2rem;
     }
     & .glowing-btn {
-      color: #8ceaff;
-      background: none;
+      background: transparent;
       padding: 1rem 1rem 1rem 2rem;
       border-radius: 1.5rem;
-      margin: 2rem;
-      border: 2px solid var(--loading-border-color);
-      box-shadow: 0 0 5px var(--loading-color), 0 0 25px var(--loading-color),
-        0 0 50px var(--loading-color), 0 0 100px var(--loading-color);
+      border: none;
+      margin-bottom: 5rem;
       cursor: pointer;
-      animation: loadding-box 0.8s linear infinite;
     }
 
     & .glowing-txt {
-      font-size: 2vh;
+      font-size: 2rem;
       color: #91d8eb;
       letter-spacing: 0.5rem;
       text-align: center;
@@ -350,8 +348,10 @@ h1 {
 }
 
 @media (max-width: 990px) {
-  h1 {
-    font-size: 1.5rem;
+  .title {
+    &h1 {
+      font-size: 1.5rem;
+    }
   }
   .dark-mode {
     & .navbar .toggle::before {
@@ -360,9 +360,6 @@ h1 {
   }
 }
 @media (max-width: 575px) {
-  h1 {
-    font-size: 1.4rem;
-  }
   .title {
     border-radius: 1rem;
     & h1 {
