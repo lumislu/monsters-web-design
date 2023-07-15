@@ -98,6 +98,7 @@ p {
   }
 }
 
+// 開場動畫
 .loading-page {
   position: fixed;
   display: flex;
@@ -118,6 +119,8 @@ p {
       animation: opening 2s 2.5s ease-in-out forwards;
     }
   }
+
+  //門裡
   & .door {
     position: relative;
     display: flex;
@@ -147,6 +150,7 @@ p {
         border: 1vh solid rgba(119, 119, 119, 0.186);
         border-radius: 1vh;
       }
+
       & .door-handle {
         width: 2vh;
         height: 2vh;
@@ -156,6 +160,7 @@ p {
         box-shadow: inset 2px 2px 5px var(--light), 2px 2px 1px var(--shadow);
       }
     }
+    //門上的花紋
     & .door-light {
       display: flex;
       align-items: center;
@@ -190,11 +195,11 @@ p {
     &::after {
       content: "Monster, Inc";
       position: absolute;
-      width: 100vw;
-      font-size: 30vh;
+      width: 120vw;
+      font-size: 28vh;
       z-index: -1;
-      top: -10vh;
-      left: -30vw;
+      top: 0vh;
+      left: -40vw;
       font-weight: 900;
       color: #91d8eb;
       text-shadow: 0 0 5px var(--loading-color), 0 0 15px var(--loading-color),
@@ -202,26 +207,15 @@ p {
         0 0 80px var(--loading-color), 0 0 120px var(--loading-color);
     }
   }
+  //發光的字
   & .glowing {
     position: fixed;
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    & #title {
-      font-size: 2rem;
-    }
-    & .glowing-btn {
-      background: transparent;
-      padding: 1rem 1rem 1rem 2rem;
-      border-radius: 1.5rem;
-      border: none;
-      margin-bottom: 5rem;
-      cursor: pointer;
-    }
-
     & .glowing-txt {
-      font-size: 2rem;
+      font-size: 1.8rem;
       color: #91d8eb;
       letter-spacing: 0.5rem;
       text-align: center;
@@ -234,13 +228,12 @@ p {
       }
     }
     & .loading {
-      margin-top: 6rem;
+      margin-top: 10rem;
       width: 80%;
       height: 4px;
       background-color: none;
       border-radius: 1rem;
       box-shadow: 0 0 5px var(--loading-color), 0 0 120px var(--loading-color);
-
       & .bar {
         background-color: var(--loading-color);
         width: 0%;

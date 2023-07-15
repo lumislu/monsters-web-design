@@ -182,11 +182,11 @@ p {
 .loading-page .door::after {
   content: "Monster, Inc";
   position: absolute;
-  width: 100vw;
-  font-size: 30vh;
+  width: 120vw;
+  font-size: 28vh;
   z-index: -1;
-  top: -10vh;
-  left: -30vw;
+  top: 0vh;
+  left: -40vw;
   font-weight: 900;
   color: #91d8eb;
   text-shadow: 0 0 5px var(--loading-color), 0 0 15px var(--loading-color), 0 0 30px var(--loading-color), 0 0 60px var(--loading-color), 0 0 80px var(--loading-color), 0 0 120px var(--loading-color);
@@ -197,19 +197,8 @@ p {
   flex-direction: column;
   align-items: center;
 }
-.loading-page .glowing #title {
-  font-size: 2rem;
-}
-.loading-page .glowing .glowing-btn {
-  background: transparent;
-  padding: 1rem 1rem 1rem 2rem;
-  border-radius: 1.5rem;
-  border: none;
-  margin-bottom: 5rem;
-  cursor: pointer;
-}
 .loading-page .glowing .glowing-txt {
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: #91d8eb;
   letter-spacing: 0.5rem;
   text-align: center;
@@ -221,7 +210,7 @@ p {
           animation: loadding-text 0.6s 0.2s linear infinite;
 }
 .loading-page .glowing .loading {
-  margin-top: 6rem;
+  margin-top: 10rem;
   width: 80%;
   height: 4px;
   background-color: none;
