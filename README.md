@@ -5,8 +5,7 @@
 網站連結：https://lumislu.github.io/monsters-web-design/
 
 
-
-[[https://github.com/lumislu/monsters-web-design/blob/main/assets/monsters-web.mp4]](https://youtu.be/ysvldJzazts)
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/"YOUR_VIDEO_ID"/0.jpg)](https://youtu.be/ysvldJzazts)
 
 
 
