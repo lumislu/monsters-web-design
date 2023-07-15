@@ -184,13 +184,13 @@ document.addEventListener("scroll", handleScroll, {
 
 // opening animation
 
-let percent = 0;
-let loadingTimer = setInterval(() => {
-  loadingBar.style.width = percent + "%";
-  percent += 1;
-  if (percent > 100) {
-    loadingPage.classList.add("complete");
-    glowing.classList.add("complete");
-    clearInterval(loadingTimer);
-  }
-}, 50);
+// let percent = 0;
+// let loadingTimer = setInterval(() => {
+//   loadingBar.style.width = percent + "%";
+//   percent += 1;
+//   if (percent > 100) {
+//     loadingPage.classList.add("complete");
+//     glowing.classList.add("complete");
+//     clearInterval(loadingTimer);
+//   }
+// }, 50);

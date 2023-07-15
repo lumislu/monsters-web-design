@@ -25,13 +25,13 @@
   font-weight: 500;
   letter-spacing: 0.15rem;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1rem;
   cursor: pointer;
 }
 .navbar ul li:last-child {
   position: absolute;
-  top: 1.5rem;
-  right: 1.5rem;
+  top: 1rem;
+  right: 2rem;
 }
 .navbar ul li a {
   color: var(--text);
@@ -47,19 +47,19 @@
   color: var(--clr-toggle);
 }
 .navbar ul .toggle {
-  width: 5rem;
-  height: 2.5rem;
+  width: 4.5rem;
+  height: 2rem;
   background: var(--bgc);
   position: relative;
-  border-radius: 2rem;
+  border-radius: 1.5rem;
   cursor: pointer;
 }
 .navbar ul .toggle::before {
   content: "";
   transition: 0.5s;
   position: absolute;
-  width: 2rem;
-  height: 2rem;
+  width: 1.5rem;
+  height: 1.5rem;
   border-radius: 50%;
   background: var(--clr-toggle);
   top: 0.25rem;
@@ -103,10 +103,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 3rem;
+  gap: 2rem;
 }
 .banner .social-media a {
-  font-size: 3rem;
+  font-size: 2rem;
   color: #fff;
 }
 .banner .social-media a:hover {
@@ -139,7 +139,7 @@
           animation: jumping ease-in-out 0.7s infinite;
 }
 .banner .more p {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 .banner .more:hover, .banner .more:visited {
   transform: scale(1.1);
@@ -154,6 +154,21 @@
 .navbar ul li:nth-child(5) {
     display: none;
   }
+  .navbar ul li:last-child {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+  }
+  .navbar ul .toggle {
+    width: 4rem;
+    height: 2rem;
+  }
+  .navbar ul .toggle::before {
+    width: 1.5rem;
+    height: 1.5rem;
+    top: 0.25rem;
+    left: 0.25rem;
+  }
   .navbar .navbar-column {
     display: flex;
     position: absolute;
@@ -164,7 +179,7 @@
   }
   .navbar .navbar-column #menu-icon {
     height: 100%;
-    font-size: 2.2rem;
+    font-size: 1.5rem;
     padding: 1.5rem;
     color: var(--text);
     cursor: pointer;
@@ -173,7 +188,7 @@
     display: none;
   }
   .navbar .navbar-column:hover, .navbar .navbar-column.active {
-    width: 45vw;
+    width: 40vw;
     height: 50vh;
     background-color: var(--bgc);
   }
@@ -188,7 +203,7 @@
   }
   .navbar .navbar-column:hover .list a, .navbar .navbar-column.active .list a {
     color: var(--text);
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   .navbar .navbar-column:hover .list a:hover, .navbar .navbar-column.active .list a:hover {
     color: var(--clr-toggle);
@@ -206,7 +221,7 @@
 }
 @media (max-width: 575px) {
   .navbar .navbar-column:hover, .navbar .navbar-column.active {
-    width: 80vw;
+    width: 60vw;
     height: 50vh;
   }
   .banner h1 {

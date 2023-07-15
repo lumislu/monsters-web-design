@@ -1,8 +1,8 @@
-@import url(/style/header.css);
-@import url(/style/character.css);
-@import url(/style/about.css);
-@import url(/style/video.css);
-@import url(/style/contact.css);
+@import url("header.css");
+@import url("character.css");
+@import url("about.css");
+@import url("video.css");
+@import url("contact.css");
 
 :root {
   --loading-color: #00b3ff;
@@ -60,7 +60,7 @@ p {
   --text: #f1f1f1f7;
   --clr-toggle: #fa725a;
   & .navbar .toggle::before {
-    left: 2.75rem;
+    left: 2.65rem;
   }
   & .header-wrapper {
     position: absolute;
@@ -71,7 +71,7 @@ p {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   font-weight: 600;
   padding: 1rem 2rem;
   text-align: center;
@@ -102,7 +102,7 @@ h1 {
   }
   &:hover {
     & p {
-      font-size: 1.2rem;
+      font-size: 1rem;
       width: 50vw;
       background-color: var(--bgc);
       box-shadow: 0 0 0;
@@ -351,17 +351,22 @@ h1 {
 
 @media (max-width: 990px) {
   h1 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
+  }
+  .dark-mode {
+    & .navbar .toggle::before {
+      left: 2.25rem;
+    }
   }
 }
 @media (max-width: 575px) {
   h1 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
   .title {
     border-radius: 1rem;
     & h1 {
-      font-size: 1.5rem;
+      font-size: 1.3rem;
     }
     & p {
       display: none;

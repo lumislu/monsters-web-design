@@ -23,12 +23,12 @@
       font-weight: 500;
       letter-spacing: 0.15rem;
       text-align: center;
-      font-size: 1.5rem;
+      font-size: 1rem;
       cursor: pointer;
       &:last-child {
         position: absolute;
-        top: 1.5rem;
-        right: 1.5rem;
+        top: 1rem;
+        right: 2rem;
       }
       & a {
         color: var(--text);
@@ -46,19 +46,19 @@
       }
     }
     & .toggle {
-      width: 5rem;
-      height: 2.5rem;
+      width: 4.5rem;
+      height: 2rem;
       background: var(--bgc);
       position: relative;
-      border-radius: 2rem;
+      border-radius: 1.5rem;
 
       cursor: pointer;
       &::before {
         content: "";
         transition: 0.5s;
         position: absolute;
-        width: 2rem;
-        height: 2rem;
+        width: 1.5rem;
+        height: 1.5rem;
         border-radius: 50%;
         background: var(--clr-toggle);
         top: 0.25rem;
@@ -105,9 +105,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 3rem;
+    gap: 2rem;
     & a {
-      font-size: 3rem;
+      font-size: 2rem;
       color: #fff;
       &:hover {
         cursor: pointer;
@@ -140,7 +140,7 @@
       animation: jumping ease-in-out 0.7s infinite;
     }
     & p {
-      font-size: 1.5rem;
+      font-size: 1.25rem;
     }
     &:hover,
     &:visited {
@@ -160,6 +160,22 @@
       li:nth-child(5) {
         display: none;
       }
+      & li:last-child {
+        position: absolute;
+        top: 1rem;
+        right: 1.5rem;
+      }
+      & .toggle {
+        width: 4rem;
+        height: 2rem;
+
+        &::before {
+          width: 1.5rem;
+          height: 1.5rem;
+          top: 0.25rem;
+          left: 0.25rem;
+        }
+      }
     }
     & .navbar-column {
       display: flex;
@@ -170,7 +186,7 @@
       transition: width 1s, height 1s;
       & #menu-icon {
         height: 100%;
-        font-size: 2.2rem;
+        font-size: 1.5rem;
         padding: 1.5rem;
         color: var(--text);
         cursor: pointer;
@@ -180,7 +196,7 @@
       }
       &:hover,
       &.active {
-        width: 45vw;
+        width: 40vw;
         height: 50vh;
         background-color: var(--bgc);
         & #menu-icon {
@@ -193,7 +209,7 @@
           flex-direction: column;
           a {
             color: var(--text);
-            font-size: 1.5rem;
+            font-size: 1rem;
 
             &:hover {
               color: var(--clr-toggle);
@@ -221,7 +237,7 @@
     & .navbar-column {
       &:hover,
       &.active {
-        width: 80vw;
+        width: 60vw;
         height: 50vh;
       }
     }
