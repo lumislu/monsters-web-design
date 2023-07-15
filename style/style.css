@@ -186,7 +186,7 @@ p {
   font-size: 28vh;
   z-index: -1;
   top: 0vh;
-  left: -40vw;
+  left: -35vw;
   font-weight: 900;
   color: #91d8eb;
   text-shadow: 0 0 5px var(--loading-color), 0 0 15px var(--loading-color), 0 0 30px var(--loading-color), 0 0 60px var(--loading-color), 0 0 80px var(--loading-color), 0 0 120px var(--loading-color);
