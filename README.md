@@ -6,7 +6,7 @@
 
 
 
-[https://user-images.githubusercontent.com/117718655/229353535-f6683131-9a01-4cd3-bf63-6fae95215a72.mp4](https://github.com/lumislu/monsters-web-design/blob/main/assets/monsters-web.mp4)
+[https://github.com/lumislu/monsters-web-design/blob/main/assets/monsters-web.mp4]
 
 
 
