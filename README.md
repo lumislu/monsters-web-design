@@ -5,11 +5,7 @@
 網站連結：https://lumislu.github.io/monsters-web-design/
 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ysvldJzazts" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+[![点击观看视频](./assets/homepage.png)](https://youtu.be/ysvldJzazts)
 
-
-
-#homepage
-![homepage.](./assets/homepage.png)
 #darkmode
 ![darkmode](./assets/darkmode.png)
