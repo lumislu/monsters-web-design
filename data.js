@@ -5,7 +5,7 @@ const monsters = [
     englishName: "James Sullivan",
     description:
       "他是一個大型、藍色、毛茸茸的怪物，有著天生的恐怖力量。Sulley原本是怪獸電力公司中最受歡迎的恐怖專家，但在與Mike的冒險中，他逐漸變得更友善和關心他人。",
-    imgUrl: "/img/mons6.jpg",
+    imgUrl: "img/mons6.jpg",
   },
   {
     id: "3",
@@ -13,7 +13,7 @@ const monsters = [
     englishName: "Boo",
     description:
       "她是一個可愛的兩歲小女孩，意外進入了怪獸世界。Boo的出現改變了Mike和Sulley的命運，並讓他們重新評估他們對怪獸和人類之間關係的看法。",
-    imgUrl: "/img/mons2.png",
+    imgUrl: "./img/mons2.png",
   },
   {
     id: "7",
