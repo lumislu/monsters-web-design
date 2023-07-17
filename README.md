@@ -5,12 +5,7 @@
 網站連結：https://lumislu.github.io/monsters-web-design/
 
 
+[![点击观看视频](./assets/homepage.png)](https://youtu.be/ysvldJzazts)
 
-[https://github.com/lumislu/monsters-web-design/blob/main/assets/monsters-web.mp4]
-
-
-
-#homepage
-![homepage.](./assets/homepage.png)
 #darkmode
 ![darkmode](./assets/darkmode.png)
