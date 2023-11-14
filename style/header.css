@@ -118,8 +118,7 @@
   color: var(--main-color);
   text-shadow: 5px 5px 1px rgba(255, 255, 255, 0.6392156863);
   font-weight: 700;
-  -webkit-animation: logo ease-in 3s 5s forwards;
-          animation: logo ease-in 3s 5s forwards;
+  animation: logo ease-in 3s 5s forwards;
 }
 .banner h1 img {
   width: 20vh;
@@ -135,8 +134,7 @@
 }
 .banner .more i {
   font-size: 1.25rem;
-  -webkit-animation: jumping ease-in-out 0.7s infinite;
-          animation: jumping ease-in-out 0.7s infinite;
+  animation: jumping ease-in-out 0.7s infinite;
 }
 .banner .more p {
   font-size: 1.25rem;
@@ -149,9 +147,9 @@
 
 @media (max-width: 990px) {
   .navbar ul li:nth-child(1),
-.navbar ul li:nth-child(2),
-.navbar ul li:nth-child(4),
-.navbar ul li:nth-child(5) {
+  .navbar ul li:nth-child(2),
+  .navbar ul li:nth-child(4),
+  .navbar ul li:nth-child(5) {
     display: none;
   }
   .navbar ul li:last-child {

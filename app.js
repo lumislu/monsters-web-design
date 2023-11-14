@@ -71,126 +71,36 @@ monsters.map((monster) => {
 });
 
 //about
-const aboutContainer = document.querySelector(".about-container");
-const dots = document.querySelector(".dots");
-const imgBg = [];
-
-const scrollController = new AbortController();
-let animationTimer;
+const about = document.querySelector(".about-container");
+const slideDuration = 5000; // 每張輪播圖片顯示時間
 let currentSlideIndex = 0;
-const slideInterval = 5000;
-let clickTimer; // 儲存點擊事件的計時器ID
 
-// 偵測滾動位置的函數，並觸發仔入圖片跟輪波圖
-function handleScroll() {
-  // 偵測滾動位置，判斷是否滾動到特定標題的位置
-  const titleElement = document.getElementById("about");
-  const titlePosition = titleElement.getBoundingClientRect().top;
-  const windowHeight = window.innerHeight;
-
-  if (titlePosition <= windowHeight / 2) {
-    // 滾動到特定標題，執行輪播圖片的載入和自動切換
-    console.log("scroll被觸發");
-    loadSlider();
-    startSlideShow();
-    document.removeEventListener("scroll", handleScroll, { once: true });
-  }
-}
-
-// 加載輪播圖片的函數，並監聽點擊事件
-function loadSlider() {
-  // 在此處執行輪播圖片的加載操作
-  // 可以動態生成輪播圖片的HTML元素並添加到相應的容器中
-  aboutImgs.map((img, index) => {
-    const dot = document.createElement("li");
-    dot.className = "dot";
-    dot.id = `dot-${img.id}`;
-    dot.textContent = `${img.id}`;
-    aboutContainer.style.backgroundImage = `url(${imgBg[0]})`;
-
-    if (index === 0) {
-      dot.classList.add("active");
-    }
-
-    dots.appendChild(dot);
-    imgBg.push(img.imgUrl);
-
-    // 監聽輪播圖片的點擊事件
-    dot.addEventListener("click", () => {
-      // 清除之前的計時器
-      clearInterval(animationTimer);
-      clearTimeout(clickTimer);
-
-      handleSlideClick(index);
-    });
-  });
-}
-
-// 清除dot的active
-function clearActiveDots() {
-  document.querySelectorAll(".dot").forEach((dot) => {
-    dot.classList.remove("active");
-  });
-}
-
-// 啟動輪播的函數
-function startSlideShow() {
-  // 定義輪播計時器
-  animationTimer = setInterval(() => {
-    currentSlideIndex = (currentSlideIndex + 1) % imgBg.length;
-    aboutContainer.style.animation = ""; // 重置动画属性
-    setTimeout(() => {
-      // 添加淡入效果
-      aboutContainer.style.animation = "fade-in 1s forwards";
-      // 切换到下一张图片
-      aboutContainer.style.backgroundImage = `url(${imgBg[currentSlideIndex]})`;
-
-      // 清除之前的active
-      clearActiveDots();
-      dots.children[currentSlideIndex].classList.add("active");
-    }, 1000);
-  }, slideInterval);
-}
-
-// 點擊輪播圖片時觸發的事件處理函數
-function handleSlideClick(index) {
-  // 清除之前的計時器
-  clearInterval(animationTimer);
-  // 清除之前的active
-  clearActiveDots();
-
-  // 設置點擊的圖片索引
-  aboutContainer.style.backgroundImage = `url(${imgBg[index]})`;
-  dots.children[index].classList.add("active");
-
-  aboutContainer.style.animation = "fade-in 1s forwards"; // 淡入动画效果
-
-  // 在下一个动画帧执行操作
-  requestAnimationFrame(() => {
-    // 延时重置动画属性和设置当前索引
-    setTimeout(() => {
-      aboutContainer.style.animation = ""; // 重置动画属性
-      currentSlideIndex = index;
-    }, 1000);
-  });
-  // 停止一段時間後重新啟動自動切換
-  clickTimer = startSlideShow();
-}
-
-// 監聽滾動事件，並設置事件處理函數
-document.addEventListener("scroll", handleScroll, {
-  signal: scrollController.signal,
+aboutImgs.forEach((img) => {
+  const slide = document.createElement("div");
+  slide.className = "slide";
+  slide.style.backgroundImage = `url(${img.imgUrl})`;
+  about.appendChild(slide);
 });
+
+function showNextSlide() {
+  const slides = document.querySelectorAll('.slide');
+  slides.forEach((slide) => {
+    slide.classList.remove('active');
+  });
+  slides[currentSlideIndex].classList.add('active');
+  currentSlideIndex = (currentSlideIndex + 1) % slides.length;
+}
+setInterval(showNextSlide, slideDuration);
 
 // opening animation
 
-let percent = 0;
-let loadingTimer = setInterval(() => {
-  loadingBar.style.width = percent + "%";
-  percent += 1;
-  if (percent > 100) {
-    loadingPage.classList.add("complete");
-    glowing.classList.add("complete");
-    clearInterval(loadingTimer);
-  }
-}, 50);
+// let percent = 0;
+// let loadingTimer = setInterval(() => {
+//   loadingBar.style.width = percent + "%";
+//   percent += 1;
+//   if (percent > 100) {
+//     loadingPage.classList.add("complete");
+//     glowing.classList.add("complete");
+//     clearInterval(loadingTimer);
+//   }
+// }, 50);

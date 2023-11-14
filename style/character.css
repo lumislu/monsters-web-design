@@ -177,7 +177,7 @@
     display: flex;
   }
   .options .option.active .info p:nth-child(1),
-.options .option.active .info p:nth-child(2) {
+  .options .option.active .info p:nth-child(2) {
     font-size: 1.5rem;
   }
   .options .option.active .info .des p {
